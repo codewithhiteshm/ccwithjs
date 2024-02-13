@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SilverLine Financial Currency Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-heading">SilverLine Financial Currency Converter</h1>
+        <form id="currencyConverterForm">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount" required>
+            
+            <label for="fromCurrency">From:</label>
+            <select id="fromCurrency" required>
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound Sterling</option>
+            </select>
+            
+            <label for="toCurrency">To:</label>
+            <select id="toCurrency" required>
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound Sterling</option>
+            </select>
+            
+            <button type="button" onclick="convertCurrency()">Convert</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
